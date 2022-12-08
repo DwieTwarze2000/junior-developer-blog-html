@@ -1,0 +1,8 @@
+{
+  "prettier.proseWrap": "always",
+  "prettier.singleQuote": true,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "prettier.tabWidth": 2,
+  "prettier.printWidth": 200,
+  "prettier.semi": false
+}
