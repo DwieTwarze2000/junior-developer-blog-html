@@ -215,6 +215,18 @@ input[type="checkbox"]:checked ~ .logo {
   }
 }
 
+/* short-posts  */
+
+.short-posts-group {
+  margin: 5rem 0;
+}
+.short-posts-title {
+  margin: 2rem 0;
+  color: var(--mainBeige);
+  font-size: 2rem;
+  padding: 0 4rem;
+}
+
 /* footer  */
 
 footer {
