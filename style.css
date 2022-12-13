@@ -215,6 +215,106 @@ input[type="checkbox"]:checked ~ .logo {
   }
 }
 
+/* short-posts  */
+
+.short-posts-group {
+  margin: 5rem 0;
+}
+.short-posts-title {
+  margin: 2rem 0;
+  color: var(--mainBeige);
+  font-size: 2rem;
+  padding: 0 2rem;
+}
+.short-post{
+  padding-left: 3.5rem;
+  display: flex;
+}
+.post-body{
+  width:78%;
+  min-height:140px;
+  background:#D9D9D9;
+  border-radius: 10px 0 0 10px;
+}
+.post-title{
+  width:100%;
+  background:#222831;
+  border-radius: 10px 0px 0 0;
+  color:#D9D9D9;
+  text-align:center;
+  font-size: 2rem;
+}
+.post-image img{
+  width:249px;
+  height:141px;
+  background:#222831;
+  margin-left:auto;
+  border-radius: 0 10px 10px 0;
+  margin-right: 50px;
+  margin-bottom: -20px;
+}
+.post-date{
+  padding-left: 3.5rem;
+  color: #EEEEEE;
+}
+.post-text{
+  height:73%;
+  width:100%;
+  padding: 0 0.5rem 0 0.5rem;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.read-more{
+  width:130px;
+  height:25px;
+  font-size: 1.2rem;
+  background:#8E9299;
+  border: none;
+  cursor: pointer;
+  position:relative;
+  bottom: 0.5rem;
+  
+}
+.read-more:hover{
+  background:#222831;
+  color:#D9D9D9;
+  transition: all 0.5s ease-in-out;
+}
+
+@media (max-width: 867px){
+  .post-text{
+    min-height: 120px;
+  }
+  .short-post{
+    flex-direction: column;
+    padding-left: 0;
+  }
+  .post-body{
+    width:100%;
+    border-radius: 0;
+  }
+  .post-title{
+    border-radius:  0;
+    font-size: 1.5rem;
+  }
+  .post-image img{
+    display: none;
+  }
+  .short-posts-title{
+    padding: 0;
+  }
+  .post-date{
+    padding-left: 0rem;
+  }
+  .read-more{
+    width:88px;
+    height:20px;
+    font-size: 0.8rem;
+  }
+}
 /* footer  */
 
 footer {
@@ -224,7 +324,7 @@ footer {
   padding: 2rem;
   margin: 0;
   width: 100%;
-  position: absolute;
+  height: 150px;
   bottom: 0;
 }
 footer .text {
@@ -268,5 +368,8 @@ footer .image {
   footer .text {
     width: 100%;
     float: none;
+  }
+  footer{
+    height: 300px;
   }
 }
